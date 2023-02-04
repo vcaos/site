@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="surveyFormCSS.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200;400;600&display=swap" rel="stylesheet">
+        <title>Survey Form</title>
+    </head>
+
+    <body>
+        <div class="empty-space"></div>
+        <div id="container">
+            <header>
+                <h1 id="title">Vivi Milk Tea</h1>
+                <p id="description">Share your thoughts on Vivi Milk Tea for a chance to win a free drink!</p>
+            </header>
+
+            <form>
+                <fieldset id="user-info">
+                    <label for="name">Name: <input id="name" type="text" placeholder="Enter your name ..." required></label>
+                    <label for="age">Age: <input id="age" type="number" min="13" max="50" placeholder="Enter your age ..." required></label>
+                    <label for="email">Email: <input id="email" type="email" placeholder="Enter your email ..." required></label>
+                </fieldset>
+
+                <fieldset id="question-1">
+                    <label>How often do you go to Vivi Milk Tea?
+                        <select id="dropdown">
+                            <option value="">(select an option)</option>
+                            <option value="rarely">Once a week!</option>
+                            <option value="often">2-3 times a week</option>
+                            <option value="frequently">5-6 times a week</option>
+                            <option value="every-day">Every day!</option>
+                            <option value ="never">Less than once a week</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <fieldset id="question-2">
+                    <label>What is your preferred tea base?
+                        <label><input class="inline" type="radio" name="tea" value="assam-black">Assam Black Tea</label>
+                        <label><input class="inline" type="radio" name="tea" value="green">Green Tea</label>
+                        <label><input class="inline" type="radio" name="tea" value="oolong">Oolong Tea</label>
+                        <label><input class="inline" type="radio" name="tea" value="earl-grey">Earl Grey Tea</label>
+                    </label>
+                </fieldset>
+
+                <fieldset id="question-3">
+                    <label>What are your preferred toppings? Check all that apply.
+                        <label><input class="inline" type="checkbox" value="1">Amber Pearl</label>
+                        <label><input class="inline" type="checkbox" value="2">Grass Jelly</label>
+                        <label><input class="inline" type="checkbox" value="3">Lychee Jelly</label>
+                        <label><input class="inline" type="checkbox" value="4">Milk Foam</label>
+                        <label><input class="inline" type="checkbox" value="5">Custard Pudding</label>
+                    </label>
+                </fieldset>
+
+                <fieldset id="question-4">
+                    <label>What would you like to see added to the menu?
+                        <textarea name="comment" placeholder="I would like to see ..."></textarea>
+                    </label>
+                </fieldset>
+
+                <input id="submit-button" type="submit"/>
+            </form>
+        </div>
+        <div class="empty-space"></div>
+    </body>
+</html>

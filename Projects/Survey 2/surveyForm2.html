@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="surveyForm2CSS.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200;400;600&display=swap" rel="stylesheet">
+        <title>Customer Satisfaction Survey</title>
+    </head>
+
+    <body>
+        <div class="empty-space"></div>
+        <div id="container">
+            <header>
+                <h1>Customer Satisfaction Survey</h1>
+                <p>Your feedback is important to us. Read each statement carefully and select a response 
+                    that corresponds to your personal judgement.</p>
+            </header>
+
+            <form>
+                <fieldset id="user-info">
+                    <label>Name:<input type="text" required></label>
+                    <br>
+                    <label>Email Address:<input type="email" required></label>
+                </fieldset>
+
+                <fieldset id="questions">
+                    <label>Your milk tea barista was: 
+                        <label><input type="radio" name="consultant" value="Vivian">Vivian</label>
+                        <label><input type="radio" name="consultant" value="Katie">Katie</label>
+                        <label><input type="radio" name="consultant" value="Isabelle">Isabelle</label>
+                        <label><input type="radio" name="consultant" value="Krystal">Krystal</label>
+                    </label>
+                    <br>
+                    <label>How did you find out about Vivi Bubble Tea?
+                        <label><input type="checkbox" value="1">Google</label>
+                        <label><input type="checkbox" value="2">Instagram</label>
+                        <label><input type="checkbox" value="3">TikTok</label>
+                        <label><input type="checkbox" value="4">YouTube</label>
+                        <label><input type="checkbox" value="5">Twitter</label>
+                        <label><input type="checkbox" value="6">Friend</label>
+                        <label><input type="checkbox" value="7">Other <input type="text"></label>
+                    </label>
+                </fieldset>
+
+                <fieldset id="table1">
+                    <label>On a scale of 1 to 5, how would you rate the Barista?
+                        <table>
+                            <tr>
+                                <th class="empty-box top-left"></th>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th class="top-right">5</th>
+                            </tr>
+
+                            <tr>
+                                <th class="table-question">Knowledge of the product?</th>
+                                <th><input type="radio" name="1-1"></th>
+                                <th><input type="radio" name="1-1"></th>
+                                <th><input type="radio" name="1-1"></th>
+                                <th><input type="radio" name="1-1"></th>
+                                <th><input type="radio" name="1-1"></th>
+                            </tr>
+
+                            <tr>
+                                <th class="table-question">Professionalism?</th>
+                                <th><input type="radio" name="1-2"></th>
+                                <th><input type="radio" name="1-2"></th>
+                                <th><input type="radio" name="1-2"></th>
+                                <th><input type="radio" name="1-2"></th>
+                                <th><input type="radio" name="1-2"></th>
+                            </tr>
+
+                            <tr>
+                                <th class="table-question bottom-left">Overall performance</th>
+                                <th><input type="radio" name="1-3"></th>
+                                <th><input type="radio" name="1-3"></th>
+                                <th><input type="radio" name="1-3"></th>
+                                <th><input type="radio" name="1-3"></th>
+                                <th class="bottom-right"><input type="radio" name="1-3"></th>
+                            </tr>
+                        </table>
+                    </label>
+                </fieldset>
+
+                <fieldset id="table2">
+                    <label>Rate Vivi Milk Tea as a company.
+                        <table>
+                            <tr>
+                                <th class="empty-box top-left"></th>
+                                <th>Very Unlikely</th>
+                                <th>Unlikely</th>
+                                <th>Neutral</th>
+                                <th>Likely</th>
+                                <th class="top-right">Very Likely</th>
+                            </tr>
+
+                            <tr>
+                                <th class="table-question">Would you recommend our service to friends or family?</th>
+                                <th><input type="radio" name="2-1"></th>
+                                <th><input type="radio" name="2-1"></th>
+                                <th><input type="radio" name="2-1"></th>
+                                <th><input type="radio" name="2-1"></th>
+                                <th><input type="radio" name="2-1"></th>
+                            </tr>
+
+                            <tr>
+                                <th class="table-question bottom-left">Would you use our service in the future?</th>
+                                <th><input type="radio" name="2-2"></th>
+                                <th><input type="radio" name="2-2"></th>
+                                <th><input type="radio" name="2-2"></th>
+                                <th><input type="radio" name="2-2"></th>
+                                <th class="bottom-right"><input type="radio" name="2-2"></th>
+                            </tr>
+                        </table>
+                    </label>
+                </fieldset>
+
+                <input id=submit-button" type="submit"/>
+
+            </form>
+        </div>
+
+        <div class="empty-space"></div>
+
+    </body>
+</html>

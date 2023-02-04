@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Todo List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="title">
+                <img src="sparkle.png" class="sparkle">
+                <h1>My Todo List</h1>
+                <img src="sparkle.png" class="sparkle">
+            </div>
+            <form class="search">
+                <input type="text" name="search" placeholder="Search a todo">
+            </form>
+        </header>
+
+        <ul class="todo-list">
+            <!--list of todos -->
+            <li class="list-item">
+                <span>take a nap</span>
+                <img class="delete" src="delete.png">
+            </li>
+            <li class="list-item">
+                <span>do homework</span>
+                <img class="delete" src="delete.png">
+            </li>
+        </ul>
+
+        <form class="add">
+            <input type="text" name="add" placeholder="Enter a new todo">
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
